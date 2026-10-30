@@ -1,0 +1,29 @@
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <p class="footer-brand">Ashgrove Law</p>
+      <p>{{ site.firm.street }}<br>{{ site.firm.city }}, {{ site.firm.region }} {{ site.firm.postal_code }}</p>
+      <p><a href="tel:{{ site.firm.phone_link }}">{{ site.firm.phone }}</a><br><a href="mailto:{{ site.firm.email }}">{{ site.firm.email }}</a></p>
+    </div>
+    <div>
+      <p class="footer-head">Practice areas</p>
+      <ul>
+        <li><a href="{{ '/practice-areas/employment-law/' | relative_url }}">Employment law</a></li>
+        <li><a href="{{ '/practice-areas/business-formation/' | relative_url }}">Business formation</a></li>
+        <li><a href="{{ '/practice-areas/contracts-disputes/' | relative_url }}">Contracts &amp; disputes</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-head">Firm</p>
+      <ul>
+        <li><a href="{{ '/attorneys/' | relative_url }}">Our attorneys</a></li>
+        <li><a href="{{ '/what-to-expect/' | relative_url }}">What to expect &amp; fees</a></li>
+        <li><a href="{{ '/insights/' | relative_url }}">Legal insights</a></li>
+        <li><a href="{{ '/contact/' | relative_url }}">Contact &amp; directions</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer-legal">
+    <p>&copy; {{ site.time | date: "%Y" }} {{ site.firm.legal_name }}. Attorney advertising. The information on this site is general information, not legal advice, and reading it does not create an attorney-client relationship. Prior results do not guarantee a similar outcome.</p>
+  </div>
+</footer>

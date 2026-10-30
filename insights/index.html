@@ -1,0 +1,18 @@
+---
+layout: page
+title: Legal Insights
+heading: Legal insights
+eyebrow: Insights
+lede: Plain-English notes from our attorneys on Ohio employment and business law, written for the questions clients ask us most.
+description: Articles from Ashgrove Law's attorneys on Ohio employment law, severance agreements, non-competes and forming a business.
+---
+<ul class="insight-list">
+  {% for post in site.posts %}
+  <li>
+    <p class="post-meta">{{ post.date | date: "%B %-d, %Y" }} &middot; {{ post.author }}</p>
+    <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+    <p>{{ post.description }}</p>
+  </li>
+  {% endfor %}
+</ul>
+<p class="feed-link"><a href="{{ '/insights/feed.xml' | relative_url }}">Subscribe by RSS</a></p>

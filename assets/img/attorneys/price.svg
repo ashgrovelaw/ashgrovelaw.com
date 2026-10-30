@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160">
+  <rect width="160" height="160" fill="#cbd5d9"/>
+  <path d="M30 160c4-34 24-50 50-50s46 16 50 50z" fill="#b48a3c"/>
+  <path d="M68 104h24v14c0 6-24 6-24 0z" fill="#a8714c"/>
+  <ellipse cx="80" cy="74" rx="26" ry="30" fill="#a8714c"/>
+  <path d="M50 80c-8-34 10-54 30-54s38 18 30 54c-4-20-14-32-30-34-16 2-26 14-30 34z" fill="#3a2418"/>
+  <text x="140" y="148" text-anchor="end" font-family="Georgia, serif" font-size="14" fill="#ffffff" opacity="0.8">AP</text>
+</svg>

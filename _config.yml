@@ -1,0 +1,43 @@
+title: Ashgrove Law
+tagline: Employment and small-business law in Columbus, Ohio
+description: ""
+url: "https://ashgrovelaw.com"
+baseurl: ""
+lang: en_US
+
+logo: /assets/img/logo.svg
+
+author:
+  name: Ashgrove Law LLC
+
+firm:
+  legal_name: Ashgrove Law LLC
+  phone: "(614) 555-0142"
+  phone_link: "+16145550142"
+  email: hello@ashgrovelaw.com
+  street: 580 N. Fourth Street, Suite 300
+  city: Columbus
+  region: OH
+  postal_code: "43215"
+  hours: Monday to Friday, 8:30 a.m. to 5:30 p.m.
+  founded: 2012
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+
+permalink: /insights/:title/
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+
+feed:
+  path: insights/feed.xml
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160">
+  <rect width="160" height="160" fill="#d9d3c4"/>
+  <path d="M30 160c4-34 24-50 50-50s46 16 50 50z" fill="#3d4a5c"/>
+  <path d="M68 104h24v14c0 6-24 6-24 0z" fill="#e7c4a5"/>
+  <ellipse cx="80" cy="74" rx="26" ry="30" fill="#e7c4a5"/>
+  <path d="M55 66c0-22 12-32 26-32s26 8 25 32c-6-12-14-16-25-16s-20 4-26 16z" fill="#6b4a2e"/>
+  <text x="140" y="148" text-anchor="end" font-family="Georgia, serif" font-size="14" fill="#ffffff" opacity="0.8">MB</text>
+</svg>

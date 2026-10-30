@@ -1,0 +1,78 @@
+---
+layout: default
+title: Employment and Business Lawyers in Columbus, Ohio
+description: Ashgrove Law is a five-attorney firm in Columbus, Ohio representing employees and small businesses in employment disputes, severance, non-competes, business formation and contract disputes.
+---
+<section class="home-hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Columbus, Ohio &middot; Since 2012</p>
+      <h1>Straight answers on work, contracts and the business you are building.</h1>
+      <p class="lede">Ashgrove Law is a five-attorney firm in the Short North. We represent employees who have been treated unfairly at work, and the small and mid-sized Ohio businesses that want to get their contracts, entities and HR right the first time.</p>
+      <p class="hero-actions">
+        <a class="button" href="{{ '/contact/' | relative_url }}">Request a consultation</a>
+        <a class="button button-quiet" href="{{ '/what-to-expect/' | relative_url }}">How our fees work</a>
+      </p>
+      <p class="hero-note">If you are an employee with a workplace problem, your first consultation is free and lasts up to 30 minutes.</p>
+    </div>
+    <img class="hero-art" src="{{ '/assets/img/ash-leaf.svg' | relative_url }}" alt="Line drawing of an ash tree branch" width="420" height="420">
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2>What we do</h2>
+    <div class="cards">
+      <a class="card" href="{{ '/practice-areas/employment-law/' | relative_url }}">
+        <h3>Employment law</h3>
+        <p>Wrongful termination, discrimination and retaliation, unpaid wages and overtime, severance negotiation and non-compete reviews, for employees and for employers.</p>
+        <span class="card-link">Employment law &rarr;</span>
+      </a>
+      <a class="card" href="{{ '/practice-areas/business-formation/' | relative_url }}">
+        <h3>Business formation</h3>
+        <p>Choosing between an LLC and a corporation, operating agreements, buy-sell terms between co-owners, and the Ohio filings that keep your company in good standing.</p>
+        <span class="card-link">Business formation &rarr;</span>
+      </a>
+      <a class="card" href="{{ '/practice-areas/contracts-disputes/' | relative_url }}">
+        <h3>Contracts &amp; disputes</h3>
+        <p>Drafting and reviewing the contracts your business signs every week, and resolving the disputes when a customer, vendor or partner does not hold up their end.</p>
+        <span class="card-link">Contracts &amp; disputes &rarr;</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-tint">
+  <div class="wrap two-col">
+    <div>
+      <h2>Why clients come back</h2>
+      <ul class="checks">
+        <li><strong>You talk to your attorney.</strong> Not a paralegal, not an intake line. Every matter has one attorney responsible for it, and they return calls within one business day.</li>
+        <li><strong>A written fee estimate up front.</strong> Before we start, you get a letter that says what we will do, how we will bill it, and what it is likely to cost.</li>
+        <li><strong>Flat fees where we can.</strong> Most business formations, operating agreements and severance reviews are billed at a flat fee, so you know the number before you say yes.</li>
+        <li><strong>We know Columbus.</strong> Our attorneys appear regularly in the Franklin County Court of Common Pleas, the Southern District of Ohio and before the Ohio Civil Rights Commission.</li>
+      </ul>
+    </div>
+    <div class="stat-stack">
+      <div class="stat"><span class="stat-num">5</span><span class="stat-label">attorneys, all licensed in Ohio</span></div>
+      <div class="stat"><span class="stat-num">1,400+</span><span class="stat-label">employees and businesses represented since 2012</span></div>
+      <div class="stat"><span class="stat-num">1 day</span><span class="stat-label">to hear back from your attorney</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2>From our legal insights</h2>
+    <ul class="post-list">
+      {% for post in site.posts limit:3 %}
+      <li>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        <span class="post-meta">{{ post.date | date: "%B %-d, %Y" }} &middot; {{ post.author }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+{% include consult-cta.html %}

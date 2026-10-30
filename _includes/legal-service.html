@@ -1,0 +1,48 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LegalService",
+  "name": {{ site.firm.legal_name | jsonify }},
+  "url": {{ site.url | jsonify }},
+  "logo": {{ site.logo | absolute_url | jsonify }},
+  "image": {{ site.logo | absolute_url | jsonify }},
+  "telephone": {{ site.firm.phone_link | jsonify }},
+  "email": {{ site.firm.email | jsonify }},
+  "foundingDate": "{{ site.firm.founded }}",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": {{ site.firm.street | jsonify }},
+    "addressLocality": {{ site.firm.city | jsonify }},
+    "addressRegion": {{ site.firm.region | jsonify }},
+    "postalCode": {{ site.firm.postal_code | jsonify }},
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.9732,
+    "longitude": -83.0021
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "opens": "08:30",
+    "closes": "17:30"
+  }],
+  "areaServed": [
+    { "@type": "City", "name": "Columbus" },
+    { "@type": "State", "name": "Ohio" }
+  ],
+  "knowsAbout": [
+    "Employment law",
+    "Wrongful termination",
+    "Severance agreements",
+    "Non-compete agreements",
+    "Wage and hour claims",
+    "Business formation",
+    "Operating agreements",
+    "Commercial contracts",
+    "Business disputes"
+  ]
+}
+</script>

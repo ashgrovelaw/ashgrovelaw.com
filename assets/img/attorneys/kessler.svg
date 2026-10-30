@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160">
+  <rect width="160" height="160" fill="#d4d8dc"/>
+  <path d="M30 160c4-34 24-50 50-50s46 16 50 50z" fill="#4f4a45"/>
+  <path d="M68 104h24v14c0 6-24 6-24 0z" fill="#e3bfa1"/>
+  <ellipse cx="80" cy="74" rx="26" ry="30" fill="#e3bfa1"/>
+  <path d="M56 64c2-18 12-26 24-26s22 8 24 26c-4-8-12-12-24-12s-20 4-24 12z" fill="#b7b2ab"/>
+  <text x="140" y="148" text-anchor="end" font-family="Georgia, serif" font-size="14" fill="#ffffff" opacity="0.8">TK</text>
+</svg>
