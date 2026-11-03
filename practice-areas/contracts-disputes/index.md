@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Business Formation
+title: Contracts & Disputes
 heading: Contracts that hold up, and help when they do not
 eyebrow: Practice area
 lede: Every business runs on contracts, from the terms on your invoices to a five-year supply agreement. We draft and review them with the dispute in mind, and when a dispute comes anyway, we work to resolve it without spending more than it is worth.

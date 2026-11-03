@@ -1,0 +1,32 @@
+---
+layout: null
+permalink: /llms.txt
+---
+{%- assign home = site.pages | where: "url", "/" | first -%}
+{%- assign all_pages = site.pages | sort: "url" -%}
+# {{ site.title }}
+
+> {{ home.description }}
+
+{{ site.firm.legal_name }} has practised law in {{ site.firm.city }}, Ohio since {{ site.firm.founded }}. The office is at {{ site.firm.street }}, {{ site.firm.city }}, {{ site.firm.region }} {{ site.firm.postal_code }}; call {{ site.firm.phone }} or email {{ site.firm.email }} ({{ site.firm.hours }}).
+
+## Practice areas
+{% for p in all_pages %}{% if p.url contains "/practice-areas/" and p.title %}
+- [{{ p.title }}]({{ p.url | absolute_url }}): {{ p.description | default: p.lede | strip_newlines }}{% endif %}{% endfor %}
+
+## Fees
+{% for p in all_pages %}{% if p.url == "/what-to-expect/" %}
+- [{{ p.title }}]({{ p.url | absolute_url }}): {{ p.description | default: p.lede | strip_newlines }}{% endif %}{% endfor %}
+
+## Attorneys
+{% for p in all_pages %}{% if p.url == "/attorneys/" %}
+- [{{ p.title }}]({{ p.url | absolute_url }}): {{ p.description | default: p.lede | strip_newlines }}{% endif %}{% endfor %}
+
+## Insights
+{% for p in all_pages %}{% if p.url == "/insights/" %}
+- [{{ p.title }}]({{ p.url | absolute_url }}): {{ p.description | default: p.lede | strip_newlines }}{% endif %}{% endfor %}{% for post in site.posts %}
+- [{{ post.title }}]({{ post.url | absolute_url }}): {{ post.description | strip_newlines }}{% endfor %}
+
+## Contact
+{% for p in all_pages %}{% if p.url == "/contact/" %}
+- [{{ p.title }}]({{ p.url | absolute_url }}): {{ p.description | default: p.lede | strip_newlines }}{% endif %}{% endfor %}
